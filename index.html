@@ -443,7 +443,7 @@
                 <form action="#" class="modal-title-box">
 
                     <div class="modal-form-field">
-                        <label for="name-form" name="user-name">
+                        <label for="name-form">
                             <span class="text-dec-label">Имя</span>
                             <input class="contact-form-text" type="text" name="user-name*" id="name-form">
                             <svg class="icon-form-input">
@@ -455,7 +455,8 @@
 
                     <div class="modal-form-field">
 
-                        <label for="tel-form"><span class="text-dec-label">Телефон</span>
+                        <label for="tel-form">
+                            <span class="text-dec-label">Телефон</span>
                             <input class="contact-form-text" type="tel" name="tel*" id="tel-form">
                             <svg class="icon-form-input">
                                 <use xlink:href="./images/sprite.svg#icon-tel" />
@@ -467,7 +468,7 @@
                     <div class="modal-form-field">
                         <label for="mail-form">
                             <span class="text-dec-label">Почта</span>
-                            <input class="contact-form-text" type="mail" name="mail*" id="mail-form">
+                            <input class="contact-form-text" type="email" name="mail*" id="mail-form">
                             <svg class="icon-form-input">
                                 <use xlink:href="./images/sprite.svg#icon-mail" />
                             </svg>
@@ -478,19 +479,18 @@
                     <div class="modal-form-field">
                         <label for="comment-form">
                             <span class="text-dec-label">Комментарий</span>
-                            <textarea class="contact-form-massage" placeholder="Введите текст" name="user-messag" type="comment" id="comment-form"></textarea> 
+                            <textarea class="contact-form-massage" placeholder="Введите текст" name="user-messag" id="comment-form"></textarea> 
                             </label>
                     </div>
 
                     <div class="modal-form-confirmation">
-                        <input class="contact-form-input visually-hidden" type="checkbox" for="checkbox" value="accept"
-                            name="policy" id="policy"></input>
+                        <input class="contact-form-input visually-hidden" type="checkbox" value="accept"
+                            name="policy" id="policy">
                         <label class="confirmation" for="policy">
-                            <span class="confirmation-title">Соглашаюсь с рассылкой
-                                и принимаю &nbsp;</span>
-                            <a href="./index.html" class="accept-text-desc">Условия договора</a></label>
+                            <span class="confirmation-title">Соглашаюсь с рассылкойи принимаю &nbsp;</span>
+                            <a href="./index.html" class="accept-text-desc">Условия договора</a>
+                        </label>
                     </div>
-
 
                     <button type="submit" class="btn-modal-push">Отправить</button>
                 </form>
