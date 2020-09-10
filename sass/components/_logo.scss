@@ -4,6 +4,7 @@ header {
 }
 
 .page-header {
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
 }
@@ -28,6 +29,7 @@ header {
 
 
 .site-nav {
+    flex-wrap: wrap;
     display: flex;
     margin-left: 85px;
 
@@ -77,6 +79,7 @@ header {
 
 
 .contacts {
+    flex-wrap: wrap;
     display: flex;
     margin-left: auto;
 

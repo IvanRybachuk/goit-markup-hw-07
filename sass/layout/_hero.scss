@@ -6,11 +6,10 @@ section {
 /* Секция героя */
 .hero {
     display: flex;
-    max-width: 1600px;
+    max-width: 100%;
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
-
     background-color: $primary-text-color;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
     background-repeat: no-repeat;
@@ -29,7 +28,6 @@ section {
     &-title {
         margin-top: 0;
         margin-bottom: 30px;
-
         font-weight: 900;
         font-size: 44px;
         line-height: 1.364;
@@ -47,7 +45,6 @@ section {
     border: 0 solid transparent;
     min-width: 200px;
     padding: 10px 32px;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;

@@ -1,6 +1,10 @@
 /* Наша команда */
 .team {
+   
+    display: flex;
+    flex-wrap: wrap;
     background-color: $background-color-section;
+    min-width: 100%;
 
     &-list {
         display: flex;
@@ -53,6 +57,7 @@
 
 
 .social-icons-list {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
 }

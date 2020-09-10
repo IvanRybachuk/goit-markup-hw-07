@@ -26,6 +26,7 @@
 }
 
 .mail-form {
+    flex-wrap: wrap;
     display: flex;
 }
 
@@ -37,6 +38,7 @@
 }
 
 .form-input-mail {
+    margin-right: 12px;
     color: white;
     padding: 15px 0 15px 16px;
     background-color: transparent;
