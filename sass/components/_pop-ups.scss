@@ -31,7 +31,7 @@
     background-color: #fff;
     margin: auto;
     transition: all .4s ease;
-    transform: rotate(0) scale(1) translateY(0);
+    transform: rotate(0) scale(1) translateY(0); 
     transition-delay: .5s;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .is-hidden .modal-form-box {
-    transform: rotate(360deg) scale(0) translateY(400%);
+    transform: rotate(400deg) scale(0) translateY(400%);
     transition-delay: 0s;
 }
 
