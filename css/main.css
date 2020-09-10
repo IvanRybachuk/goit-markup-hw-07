@@ -523,42 +523,6 @@ header-nav {
   margin-left: 10px;
 }
 
-.backdrop {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: all 250ms linear;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 250ms linear 250ms;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translateX(-50%) scale(0);
-  transition: transform 250ms linear 0s;
-}
-
-.modal {
-  max-width: 528px;
-  padding: 40px;
-  border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  background-color: #ffffff;
-  transition: transform 250ms linear 150ms;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 /* Заполнение модалки */
 .btn-modal {
   outline: none;
@@ -720,7 +684,7 @@ header-nav {
   position: relative;
 }
 
-.modal-form-field:not(:nth-child(4)) {
+.modal-form-field:not(:nth-child(6)) {
   margin-bottom: 28px;
   position: relative;
 }
@@ -1364,8 +1328,6 @@ section.no-padding {
 .btn-modal {
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-right: 8px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -1535,5 +1497,53 @@ img {
   font-size: 16px;
   line-height: 1.875;
   color: #757575;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease;
+  transition-delay: 0s;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden auto;
+  padding: 20px 0;
+  display: flex;
+}
+
+.modal-form-box {
+  border-radius: 4px;
+  padding: 40px;
+  width: 528px;
+  background-color: #ffffff;
+  position: relative;
+  width: 528px;
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  transition: all .4s ease;
+  transform: rotate(0) scale(1) translateY(0);
+  transition-delay: 1s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 1s;
+}
+
+.is-hidden .modal-form-box {
+  transform: rotate(360deg) scale(0) translateY(400%);
+  transition-delay: 0s;
 }
 /*# sourceMappingURL=main.css.map */

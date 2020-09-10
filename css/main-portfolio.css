@@ -872,8 +872,6 @@ section {
 .btn-modal {
   width: 30px;
   height: 30px;
-  margin-top: 8px;
-  margin-right: 8px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
