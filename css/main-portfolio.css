@@ -124,6 +124,20 @@ header {
   align-items: baseline;
 }
 
+.footer-social-contacts {
+  margin-left: 69px;
+}
+
+.footer p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons-list {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-footer {
   margin-bottom: 20px;
   color: #ffffff;
@@ -145,25 +159,11 @@ header {
   color: #2196f3;
 }
 
-.footer-social-contacts {
-  margin-left: 69px;
-}
-
-.footer p {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
 .call-to-activity {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   text-transform: uppercase;
-}
-
-.footer-social-icons-list {
-  display: flex;
-  justify-content: center;
 }
 
 .footer-social-icons-link {

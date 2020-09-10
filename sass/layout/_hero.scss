@@ -18,29 +18,29 @@ section {
     background-size: cover;
 
 
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 696px;
+        margin: auto;
+    }
 
+    &-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.364;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white-color;
+    }
 }
 
-.hero-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 696px;
-    margin: auto;
-}
 
-.hero-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
-    letter-spacing: 0.06em;
-    text-align: center;
-    text-transform: uppercase;
-    color: $white-color;
-}
 
 .btn-main {
     border-radius: 4px;
