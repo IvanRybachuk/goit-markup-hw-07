@@ -1,6 +1,3 @@
-
-
-
 html {
   box-sizing: border-box;
 }
@@ -25,6 +22,23 @@ a {
 
 address {
   font-style: normal;
+
+  &>.list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+  }
+
+  &-contacts .link {
+    margin-top: 9px;
+    color: $footer-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &-contacts .link:hover,
+  &-contacts .link:focus {
+    color: $accept-color;
+  }
 }
 
 img {
@@ -58,17 +72,18 @@ img {
 
 header {
   border-bottom: 1px solid #ececec;
+
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.page-header {
-  display: flex;
-  align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -76,109 +91,153 @@ header {
   font-size: 26px;
   line-height: 1.192;
   color: $black-color;
+
+  & span {
+    color: $accept-color;
+  }
 }
 
-.logo span {
-  color: $accept-color;
-}
 
 .site-nav {
   display: flex;
   margin-left: 85px;
+
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  & .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $primary-title-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .current {
+    position: relative;
+    color: $accept-color;
+  }
+
+  & .current::after {
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    content: ' ';
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: $accept-color;
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: $accept-color;
+  }
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: $primary-title-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .current {
-  position: relative;
-  color: $accept-color;
-}
-
-.site-nav .current::after {
-  position: absolute;
-  bottom: -1px;
-  display: block;
-  content: ' ';
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  background: $accept-color;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $accept-color;
-}
 
 .contacts {
   display: flex;
   margin-left: auto;
+
+  & .item+.item {
+    margin-left: 30px;
+  }
+
+  & .link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .link:hover,
+  & .link:focus {
+    color: $accept-color;
+  }
+
+  &-icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+    &.envelope {
+      width: 16px;
+      height: 12px;
+    }
+
+    &.smartphone {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
 }
 
-.contacts .item + .item {
-  margin-left: 30px;
-}
-
-.contacts .link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts-icon.envelope {
-  width: 16px;
-  height: 12px;
-}
-
-.contacts-icon.smartphone {
-  width: 10px;
-  height: 16px;
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-  color: $accept-color;
-}
 
 .footer {
   background-color: #2f303a;
   color: $white-color;
-}
 
-.footer-flexbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  &-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-.footer-block-contacts {
-  display: flex;
-  align-items: baseline;
+  &-block-contacts {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-social-contacts {
+    margin-left: 69px;
+  }
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &-social-icons-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-social-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+
+    &:hover,
+    &:focus {
+      background-color: $accept-color;
+    }
+  }
+
+  &-social-icon {
+  fill: currentColor;
+}
 }
 
 .logo-footer {
@@ -186,68 +245,13 @@ header {
   color: $white-color;
 }
 
-.address > .list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-}
 
-.address-contacts .link {
-  margin-top: 9px;
-  color: $footer-text-color;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-contacts .link:hover,
-.address-contacts .link:focus {
-  color: $accept-color;
-}
-
-.footer-social-contacts {
-  margin-left: 69px;
-}
-
-.footer p {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.call-to-activity {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-transform: uppercase;
-}
-
-.footer-social-icons-list {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-social-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: $white-color;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-icons-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer-social-icons-link:hover,
-.footer-social-icons-link:focus {
-  background-color: $accept-color;
-}
-
-.footer-social-icon {
-  fill: currentColor;
-}
+// .call-to-activity {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   text-transform: uppercase;
+// }
 
 .input-form {
   display: flex;
